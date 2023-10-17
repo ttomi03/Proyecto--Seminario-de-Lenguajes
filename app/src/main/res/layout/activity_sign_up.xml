@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/ivBackgroundSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/iv_description_sign_up"
+        android:scaleType="centerCrop"
+        android:src="@drawable/netflix_login_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        android:maxWidth="320dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivLogoNetflixSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@drawable/netflix_logo"
+        android:contentDescription="@string/iv_logo_description"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@id/layoutSignUpFields"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxWidth="320dp">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/layoutSignUpFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linear_layout_bg"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="10"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:maxWidth="320dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_title_sign_up_fields"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxWidth="320dp">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/etNombreSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_nombre_hint"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_et_bg"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etApellidoSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_et_bg"
+            android:hint="@string/et_apellido_hint"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etNombreDeUsuarioSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_username_hint"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_et_bg"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etEmailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_email_hint"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_et_bg"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etPassSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_password_hint"
+            android:padding="7dp"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_et_bg"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etPassConfirmSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_confirm_pass_hint"
+            android:padding="7dp"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_et_bg"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etBirthdateSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_birthdate_hint"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_et_bg"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:maxWidth="320dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+        <Button
+            android:id="@+id/btnCrearUsuarioSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E50914"
+            android:text="@string/btn_sign_up_text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize"
+            android:maxWidth="320dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

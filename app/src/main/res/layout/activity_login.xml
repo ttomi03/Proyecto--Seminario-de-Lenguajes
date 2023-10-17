@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/primary_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </include>
+    <ImageView
+        android:id="@+id/ivBackgroundLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/iv_fondo_login_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/netflix_login_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivLogoNetflixLogin"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/netflix_logo"
+        android:scaleType="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layoutLoginFields"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:contentDescription="@string/iv_logo_description">
+    </ImageView>
+
+
+    <LinearLayout
+        android:id="@+id/layoutLoginFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/linear_layout_bg"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="10"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_title_login_fields"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_et_bg"
+            android:hint="@string/et_email_hint"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etPassLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_et_bg"
+            android:hint="@string/et_password_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="#8B8C8C"
+            android:textSize="20sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <CheckBox
+            android:id="@+id/cbRecordarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordar usuario"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/checkbox_bg"
+            android:backgroundTint="#E50914"
+            android:layout_marginBottom="10dp">
+        </CheckBox>
+
+        <Button
+            android:id="@+id/btnIniciarSesionLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E50914"
+            android:text="@string/btn_login_text"
+            android:textSize="15sp"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnCrearUsuarioLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_sign_up_text"
+            android:backgroundTint="#E50914"
+            android:textSize="15sp"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

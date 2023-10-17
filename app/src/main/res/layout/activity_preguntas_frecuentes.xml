@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreguntasFrecuentes"
+    android:background="#2B2B2B"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbarpreguntasfrecuentes"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:text="¿Que es Netflix?"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="Netflix es un servicio de streaming por suscripción que les permite a sus miembros ver series y películas en un dispositivo con conexión a internet."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="¿Como funciona Netflix?"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="uando presionas reproducir, Netflix envía el video a tu proveedor de internet por la vía más rápida posible. Imagínalo como manejar un coche en la carretera. Cuando Netflix envía un video, debemos evitar las congestiones de tránsito, los accidentes y los cortes o desvíos para que el video llegue rápido a tu pantalla."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="¿Con cuantas peliculas cuenta Netflix?"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="El servicio de streaming de Netflix cuenta con un catálogo completo de 13.612 títulos de películas en todo el mundo. Sin embargo, los derechos para la visualización de las cintas varían de país en país, lo que hace que los usuarios de cada zona puedan acceder a distinto número de producciones."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="¿Cuantos planes de pago hay en Netflix?"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="La plataforma de streaming cuenta con tres planes disponibles para sus usuarios: el básico, el estándar y el premium."/>
+
+</LinearLayout>

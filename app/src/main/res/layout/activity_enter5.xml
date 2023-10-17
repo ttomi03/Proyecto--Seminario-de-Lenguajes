@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity5"
+    android:background="#1E1C1C"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="541dp"
+        android:layout_marginTop="20sp"
+        app:srcCompat="@drawable/papel"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="FECHA DE ESTRENO"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

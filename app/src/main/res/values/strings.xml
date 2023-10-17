@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Proyecto Seminario</string>
+    <string name="catalogo_de_peliculas">CATALOGO DE PELICULAS</string>
+    <string name="textview">TextView</string>
+    <string name="more">more</string>
+    <string name="et_password_hint">Contraseña</string>
+    <string name="tv_ingrese_usuario">Ingrese su Usuario</string>
+    <string name="btn_login_text">Iniciar Sesión</string>
+    <string name="btn_sign_up_text">Crear Usuario</string>
+    <string name="tv_login_text">Ingresar Usuario</string>
+    <string name="et_email_hint">Email</string>
+    <string name="tv_title_login_fields">Iniciar Sesión</string>
+    <string name="tv_title_sign_up_fields">Crear Usuario</string>
+    <string name="et_nombre_hint">Nombre</string>
+    <string name="et_apellido_hint">Apellido</string>
+    <string name="et_username_hint">Nombre de Usuario</string>
+    <string name="et_confirm_pass_hint">Confirmar Contraseña</string>
+    <string name="et_birthdate_hint">Fecha de Nacimiento</string>
+    <string name="iv_description_sign_up">Imagen de Fondo, usada tambien en LoginActivity</string>
+    <string name="iv_logo_description">Logo de Netflix como PNG</string>
+    <string name="iv_fondo_login_description">Imagen para Fondo de Login Activity</string>
+    <string name="usuarios_guardados">Usuarios Guardados</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment, Terminos y condiciones</string>
+</resources>
